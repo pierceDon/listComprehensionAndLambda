@@ -40,6 +40,8 @@ Expected output
 ''' 4) 
 You are given a list of temperatures in Celsius: [0, 12, 34, 25, -5]. Use map() and a lambda function to convert each temperature to Fahrenheit.
 
+Expected output: [32.0, 53.6, 93.2, 77.0, 23.0]
+
 '''
 
 cel = [0, 12, 34, 25, -5]
