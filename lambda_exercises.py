@@ -110,6 +110,10 @@ original_scores = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sci
 
 ''' 9)
 Given a dictionary of student names and their scores, use a lambda function to increase each score by 5:
+
+Expected output:
+curved scores = {'Alice': 90, 'Bob': 92, 'Charlie': 83}
+
 '''
 
 students = {'Alice': 85, 'Bob': 92, 'Charlie': 78}
@@ -124,7 +128,7 @@ students = {'Alice': 85, 'Bob': 92, 'Charlie': 78}
 
 
 
-#CHALLENGE QUESTION !!
+#CHALLENGE QUESTION (Not required)!!
 ''' 10)
 check whether a given string contains a capital letter, a lower case letter, a number and a minimum length of 8 characters.
 (This is like a password verification function, HINT: Python function 'any' may be useful)
