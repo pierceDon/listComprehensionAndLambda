@@ -117,7 +117,7 @@ curved scores = {'Alice': 90, 'Bob': 92, 'Charlie': 83}
 '''
 
 students = {'Alice': 85, 'Bob': 92, 'Charlie': 78}
-
+curved_scores = 
 
 
 
