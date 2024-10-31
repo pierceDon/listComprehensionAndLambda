@@ -30,6 +30,62 @@ for i in original_list:
 
 #The filter part answers the question if the item should be transformed.
 
+x = [i for i in range(10)]
+print(x)
+
+#add in an expression (square of all numbers from 1 to 10)
+
+x = [i**2 for i in range(1,11)]
+print(x)
+
+#2)
+
+list1 = [3,4,5]
+multiplied = [item*3 for item in list1]
+print(multiplied)
+
+#3)
+listOfWords = ["this","is","a","list","of","words"]
+result = [word[0].upper() for word in listOfWords]
+print(result)
+
+#4) adding an IF condition
+# find the square of all even numbers from 1 to 10
+# find the square of all even numbers from 1 to 10
+result = [i * i for i in range (1,11) if i % 2 == 0]
+
+# 5)
+
+string = "Hello 12345 World"
+
+# extract all numbers from the string
+# output: [1,2,3,4,5]
+numbers = [int(x) for x in string if x.isdigit()]
+
+print(numbers)
+
+# extract all letters from the string
+# output: "Hello World"
+letters = [x for x in string if x.isalpha()]
+print(numbers)
+
+words = [x for x in string.split() if x.isalpha()]
+print(words)
+
+infile = open('test.txt', 'r')
+output = [i.rstrip()for i in infile]
+
+#7
+def double(x):
+    return x*2
+
+result = [double(x) for x in range(10)]
+print(result)
+
+#8 we can use multiple iterables
+
+result = [x+y for x in [10,30,50] for y in [20,40,60] if x > 30 if y > 40]
+print(result)
 
 
 ## Exercise ##
@@ -70,8 +126,7 @@ dict={"Sedan": 1500, "SUV": 2000, "Pickup": 2500, "Minivan": 1600, "Van": 2400,
 
 ## Extract the numbers from the following phrase ##
 
-phrase = 'In 1984 there were 13 instances of a protest with over 1000 people attending. On average there were 15 reported injuries at each " +
-"event, with about 3 or 4 that were classifled as serious per event.'
+phrase = 'In 1984 there were 13 instances of a protest with over 1000 people attending. On average there were 15 reported injuries at each event, with about 3 or 4 that were classifled as serious per event.'
 
 
 

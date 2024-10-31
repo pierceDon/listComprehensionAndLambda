@@ -7,7 +7,10 @@ odd_numbers = [1, 3, 5, 7, 9]
 '''
 original_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-
+even_numbers = list(filter(lambda num: num % 2 == 0, original_list))
+odd_numbers = list(filter(lambda num: num%2 != 0, original_list))
+print(even_numbers)
+print(odd_numbers)
 
 
 ''' 2)
@@ -16,24 +19,27 @@ Create a list of days that have exactly 6 characters using a lambda function on 
 
 weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
+weekdays_filtered = list(filter(lambda x: len(x) == 6, weekdays))
 
-
-
+print(weekdays_filtered)
 
 
 
 ''' 3)
 remove specific words from a given list 
-Original list:
-['orange', 'red', 'green', 'blue', 'white', 'black']
-
-Remove words:
-['orange', 'black']
-
-Expected output
-['red', 'green', 'blue', 'white']
-
 '''
+#Original list:
+color_list = ['orange', 'red', 'green', 'blue', 'white', 'black']
+
+#Remove words:
+#['orange', 'black']
+
+color_filtered = list(filter(lambda x: x != 'orange' or 'black', color_list))
+
+#Expected output
+#['red', 'green', 'blue', 'white']
+print(color_filtered)
+
 
 
 
@@ -44,9 +50,13 @@ Expected output: [32.0, 53.6, 93.2, 77.0, 23.0]
 
 '''
 
+
+
 cel = [0, 12, 34, 25, -5]
 
+far = list(map(lambda x: ((x * (9/5)) + 32), cel))
 
+print(far)
 
 
 ''' 5) Use map() with a lambda function to calculate the final price for each item in the card after applying a 10% discount.
@@ -72,7 +82,7 @@ Write a lambda function that takes two arguments x and y and returns:
 
  '''
 
-compare = 
+#compare = 
 
 print(compare(5, 3))  # Output: 'x is greater'
 print(compare(3, 7))  # Output: 'y is greater'
@@ -117,7 +127,7 @@ curved scores = {'Alice': 90, 'Bob': 92, 'Charlie': 83}
 '''
 
 students = {'Alice': 85, 'Bob': 92, 'Charlie': 78}
-curved_scores = 
+#curved_scores = 
 
 
 
